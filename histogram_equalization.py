@@ -47,7 +47,7 @@ if __name__ == '__main__':
 	# Converting to Single Channel gray-scale spectrum
 	gray_images = []
 	for im in pca_images:
-		gray_images.append(cv2.cvtColor(im, cv2.COLOR_BGR2GRAY) * (10**5))
+		gray_images.append(cv2.cvtColor(im, cv2.COLOR_BGR2GRAY))
 
 	# Implementing histogram equalization
 	equalized_images = []
